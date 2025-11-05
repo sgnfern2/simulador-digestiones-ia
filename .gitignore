@@ -1,0 +1,5 @@
+# Ignorar configuraciones locales y datos sensibles
+.streamlit/
+secrets.toml
+__pycache__/
+*.csv
