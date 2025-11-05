@@ -29,7 +29,7 @@ Este simulador interactivo permite a los estudiantes de biología molecular comp
 
 ## Despliegue en Streamlit Cloud
 
-La aplicación puede ejecutarse directamente desde el navegador (sin instalar nada). Enlace público:
+La aplicación puede ejecutarse directamente desde el navegador (sin instalar nada). Enlace público:https://simulador-digestiones-ia.streamlit.app/
 
 
 ## Resultados esperados (para Bono de Innovación)
