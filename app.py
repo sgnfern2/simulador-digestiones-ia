@@ -521,6 +521,7 @@ else:
 
 st.caption("Prototipo educativo con Streamlit + IA (explicación, retroalimentación, preguntas y tutor).")
 # descarga del CSV (versión segura)
-st.markdown("## 📥 Descargar resultados")
+
+
 
 
