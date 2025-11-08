@@ -507,16 +507,7 @@ if os.path.exists("resultados_app.csv"):
 else:
     st.info("Aún no hay datos guardados. Cuando los estudiantes usen la app y se guarden los resultados, aquí verás el panel.")
 
-with open("resultados_app.csv", "rb") as f:
-    data = f.read()
-b64 = base64.b64encode(data).decode()
-href = f'<a href="data:file/csv;base64,{b64}" download="resultados_app.csv">Haz clic aquí para descargar el archivo CSV</a>'
-st.markdown(href, unsafe_allow_html=True)
-st.markdown("---")
-st.caption("Prototipo educativo con Streamlit + IA (explicación, retroalimentación, preguntas y tutor).")
-# descarga del CSV (versión segura)
-st.markdown("## 📥 Descargar resultados")
-
+# Solo mostrar el enlace de descarga si el archivo existe
 if os.path.exists("resultados_app.csv"):
     with open("resultados_app.csv", "rb") as f:
         data = f.read()
@@ -526,3 +517,10 @@ if os.path.exists("resultados_app.csv"):
 else:
     st.info("Aún no hay archivo de resultados en este servidor. Vuelve a generar datos y luego descárgalos.")
     st.caption("⚠️ Recuerda: en Streamlit Cloud el archivo se borra cuando el servidor se reinicia o pasa tiempo sin uso.")
+
+
+st.caption("Prototipo educativo con Streamlit + IA (explicación, retroalimentación, preguntas y tutor).")
+# descarga del CSV (versión segura)
+st.markdown("## 📥 Descargar resultados")
+
+
