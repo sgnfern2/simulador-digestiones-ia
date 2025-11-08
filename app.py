@@ -6,6 +6,24 @@ import pandas as pd
 from datetime import datetime
 import os
 # Configuración de la página
+st.markdown(
+    """
+    <style>
+    :root {
+        --pucmm-blue: #003399;
+        --pucmm-gray: #E6E6E6;
+    }
+    div.stButton>button {
+        background-color: var(--pucmm-blue);
+        color: white;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.set_page_config(page_title="Simulador de digestión y gel", page_icon="🧬")
 
 # encabezado con logo y texto
@@ -520,7 +538,15 @@ else:
 
 
 st.caption("Prototipo educativo con Streamlit + IA (explicación, retroalimentación, preguntas y tutor).")
-# descarga del CSV (versión segura)
+st.markdown("""
+<hr>
+<center>
+<b>Desarrollado por:</b> Natalia Fernández · Pontificia Universidad Católica Madre y Maestra (PUCMM)<br>
+<i>Simulador académico con IA — Laboratorio de Biología Celular y Genética (BIO211-P)</i>
+</center>
+""", unsafe_allow_html=True)
+
+
 
 
 
