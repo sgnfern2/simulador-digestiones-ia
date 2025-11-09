@@ -451,8 +451,8 @@ st.markdown(f"<h3 style='{subtitle_style}'>📝 Evalúa esta práctica</h3>", un
 satisfaccion = st.slider("¿Qué tan útil te pareció la explicación de la app/IA?", 1, 5, 4)
 uso_ia = st.checkbox("Usé alguna función de IA (tutor, preguntas, explicación)", value=True)
 
-# nombre opcional
-nombre_est = st.text_input("Tu nombre o matrícula (opcional)", value="anónimo")
+# datos anónimos
+nombre_est = st.text_input("Las respuestas son anónimas", value="anónimo")
 
 if st.button("Guardar mi resultado"):
     registro = {
@@ -545,6 +545,7 @@ st.markdown("""
 <i>Simulador académico con IA — Laboratorio de Biología Celular y Genética (BIO211-P)</i>
 </center>
 """, unsafe_allow_html=True)
+
 
 
 
