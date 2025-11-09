@@ -6,7 +6,7 @@ Escuela de Ciencias Naturales y Exactas — Laboratorio de Biología Celular y G
 
 ## Propósito del proyecto
 
-Este simulador interactivo permite a los estudiantes de biología molecular comprender el proceso de digestión de ADN por enzimas de restricción mediante una interfaz visual y retroalimentación generada por inteligencia artificial (IA). La aplicación forma parte de una propuesta de innovación educativa (Bono de Innovación PUCMM) que busca integrar herramientas de IA en los laboratorios virtuales para fortalecer el aprendizaje autónomo y contextualizado.
+Este simulador interactivo permite a los estudiantes de biología molecular comprender el proceso de digestión de ADN por enzimas de restricción mediante una interfaz visual y retroalimentación generada por inteligencia artificial (IA). La aplicación forma parte de una propuesta de innovación educativa (Bono de Innovación PUCMM) que busca integrar herramientas de IA en los laboratorios para fortalecer el aprendizaje autónomo y contextualizado.
 
 
 ## Funcionalidades principales
