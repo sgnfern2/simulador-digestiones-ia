@@ -32,7 +32,7 @@ Este simulador interactivo permite a los estudiantes de biología molecular comp
 La aplicación puede ejecutarse directamente desde el navegador (sin instalar nada). Enlace público:https://simulador-digestiones-ia.streamlit.app/
 
 
-## Resultados esperados (para Bono de Innovación)
+## Resultados esperados
 
 | Indicador | Descripción | Meta |
 |-----------|-------------|------|
