@@ -24,7 +24,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.set_page_config(page_title="Simulador de digestión y gel", page_icon="🧬")
+st.set_page_config(page_title="Simulador de digestión y gel")
 
 # encabezado con logo y texto
 logo = Image.open("logo_pucmm.png")
@@ -56,7 +56,7 @@ subtitle_style = "font-size: 1.5em; margin-top: 15px; margin-bottom: 5px; font-w
 
 # Título principal
 st.markdown(
-    f"<h2 style='{subtitle_style}'>🧬 Simulador de digestión por enzimas de restricción</h2>",
+    f"<h2 style='{subtitle_style}'>Simulador de digestión por enzimas de restricción</h2>",
     unsafe_allow_html=True
 )
 st.write("Simulador con IA: gel, explicación, preguntas personalizadas y tutor virtual")
@@ -117,7 +117,7 @@ enzimas_sel = st.multiselect(
     default=[enzimas_disponibles[0]] if enzimas_disponibles else []
 )
 
-st.markdown(f"<h2 style='{subtitle_style}'>🔬 Resultado simulado</h2>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='{subtitle_style}'>Resultado simulado</h2>", unsafe_allow_html=True)
 
 #funciones de digestión
 def digest_lineal(longitud, cortes):
@@ -301,7 +301,7 @@ else:
     )
 
    #predicción del estudiante
-    st.markdown(f"<h2 style='{subtitle_style}'>🧪 Tu predicción</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='{subtitle_style}'> Tu predicción</h2>", unsafe_allow_html=True)
 
     pred = st.number_input(
         "¿Cuántos fragmentos creías que iban a salir en la digestión combinada?",
@@ -357,7 +357,7 @@ else:
             st.error(f"No se pudo conectar a la API: {e}")
             return None
    #preguntas generadas por IA
-    st.markdown(f"<h2 style='{subtitle_style}'>🧠 Preguntas generadas por IA sobre este experimento</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='{subtitle_style}'> Preguntas generadas por IA sobre este experimento</h2>", unsafe_allow_html=True)
     # inicializamos en session_state
     if "preguntas_ia" not in st.session_state:
         st.session_state["preguntas_ia"] = ""
@@ -420,7 +420,7 @@ No expliques, solo preguntas y respuestas.
 
 
     # comparación de enzimas
-    st.markdown(f"<h2 style='{subtitle_style}'>🧬 Comparación de enzimas en esta molécula</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='{subtitle_style}'> Comparación de enzimas en esta molécula</h2>", unsafe_allow_html=True)
     st.write("Así cortarían las enzimas que sí tienen sitio definido en este ADN:")
     for e, sitios in adn_info["sitios"].items():
         fr_e, _ = digerir(adn_info, [e])
@@ -514,7 +514,7 @@ if os.path.exists("resultados_app.csv"):
     else:
         st.write("No hay datos de ADN aún.")
 
-    st.markdown(f"<h3 style='{subtitle_style}'>🧪 Enzimas más usadas</h3>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='{subtitle_style}'> Enzimas más usadas</h3>", unsafe_allow_html=True)
     if "enzimas" in df.columns:
         st.dataframe(df["enzimas"].value_counts().head(5).reset_index().rename(
             columns={"index": "Enzimas", "enzimas": "veces"}
@@ -545,6 +545,7 @@ st.markdown("""
 <i>Simulador académico con IA — Laboratorio de Biología Celular y Genética (BIO211-P)</i>
 </center>
 """, unsafe_allow_html=True)
+
 
 
 
