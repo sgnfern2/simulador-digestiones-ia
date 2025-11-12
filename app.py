@@ -323,7 +323,7 @@ else:
         st.write(st.session_state["retro_ia"])
 
     # explicación paso a paso
-    with st.expander("📐 Ver explicación paso a paso"):
+    with st.expander(" Ver explicación paso a paso"):
         st.write(f"**Molécula:** {adn_sel}")
         st.write(f"**Enzimas:** {', '.join(enzimas_sel)}")
         for paso in pasos_comb:
@@ -545,6 +545,7 @@ st.markdown("""
 <i>Simulador académico con IA — Laboratorio de Biología Celular y Genética (BIO211-P)</i>
 </center>
 """, unsafe_allow_html=True)
+
 
 
 
