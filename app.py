@@ -24,7 +24,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.set_page_config(page_title="🧬Simulador de digestión y gel")
+st.set_page_config(
+    page_title="Simulador de digestión y gel de agarosa",
+    page_icon="🧬",
+)
 
 # encabezado con logo y texto
 logo = Image.open("logo_pucmm.png")
@@ -545,6 +548,7 @@ st.markdown("""
 <i>Simulador académico con IA — Laboratorio de Biología Celular y Genética (BIO211-P)</i>
 </center>
 """, unsafe_allow_html=True)
+
 
 
 
